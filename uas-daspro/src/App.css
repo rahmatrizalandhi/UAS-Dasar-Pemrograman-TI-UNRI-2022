@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #3b3b3b;
+
+  @media screen and (max-width: 580px) font-size: 16px;
+  line-height: 22px;
+}
+
+#but {
+  background-color: darkgreen;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+#table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table tbody tr:nth-of-type(even) {
+  background-color: #eee;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+#Header {
+  background-color: darkgreen;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  border: none;
+}
