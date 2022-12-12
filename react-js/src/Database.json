@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Based Design Mobile Learning Course on Android",
+        "ISBN" : "1978-0524-2528-6374",
+        "AUTHOR" : "Liranti Rahmelina"
+    },
+    {
+        "id": 2,
+        "title": "Development of Sales Application Using QR Code",
+        "ISBN" : "1978-0524-25528-6374",
+        "AUTHOR" : "Ricky Akbar, Husnil Kamil"
+    }
+]
