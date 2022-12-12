@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1, "title": "Based Design Mobile Learning Course on Android", "ISBN" : "1978-0524-2528-6374", "AUTHOR" : "Liranti Rahmelina"
+    },
+    {
+        "id": 2, "title": "Development of Sales Application Using QR Code", "ISBN" : "1978-0524-25528-6374","AUTHOR" : "Ricky Akbar, Husnil Kamil"
+    },
+    {
+        "id": 3,"title": "Perancangan dan Implementasi Web Service pada Aplikasi Permainan","ISBN" : "1978-0524-2528-6374","AUTHOR" : "Gilang Arsya Priyatna Zaman"
+    },
+    {
+        "id": 4,"title": "Perancangan Augmented Reality Media Markerless Pol","ISBN" : "1978-0524-2528-6374","AUTHOR" : "Abraham Christover Manuputty"
+    },
+    {
+        "id": 5,"title": "Pengembangan SIG Berbasis Node JS untuk Pemetaan Mesin dan Tracking","ISBN" : "1978-0524-2528-6374","AUTHOR" : "Rachmat Fajrin"
+    }
+]
