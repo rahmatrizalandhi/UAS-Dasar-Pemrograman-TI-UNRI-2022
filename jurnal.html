@@ -5,58 +5,54 @@
 	<title>List Jurnal</title>
 	<link type="text/css" rel="stylesheet" href="css/style.css"/>
 </head>
+
 <body>
+<div id="app">
+	<h2>Database Jurnal dengan Vue JS</h2>
+	<table>
+		<tr>
+			<th v-for="t in titles">{{t}}</th>
+		</tr>
+		<tr v-for="(b, i) in books" @click="update(i)">
+			<td>{{b.id}}</td>
+			<td>{{b.title}}</td>
+			<td>{{b.isbn}}</td>
+			<td>{{b.author}}</td>
+		</tr>
+	</table>
+	<button @click="add()">Buat Jurnal Baru</button>
 
-<div id="grey-modal-background" class="hidden"></div>
+	<template v-if="isAdd">
+		<div id="grey-modal-background" @keyup.enter="newJurnal()">
+			<div class="modal" @keyup.enter="newJurnal()">
+			<label for="title">Title</label>
+			<input type="text" id="title" v-model="title" :class="[inputErr[0] ? 'error' : '']" @keyup.enter="newJurnal(curId)">
+			<label for="isbn">ISBN</label>
+			<input type="text" id="isbn" v-model="isbn" :class="[inputErr[1] ? 'error' : '']" @keyup.enter="newJurnal(curId)">
+			<label for="auth">Author</label>
+			<input type="text" id="auth" v-model="author" :class="[inputErr[2] ? 'error' : '']" @keyup.enter="newJurnal(curId)">
+			<button class="green" @click="newJurnal(curId)">Tambah Jurnal</button>
+			<button @click="cancelAdd">Batal</button>
+			</div>
+		</div>
+	</template>
 
-<section>
-	<h1>Database Jurnal dengan Vanilla JS</h1>
-	<div data-container="books-table"></div>
-</section>
-
-<script type="application/javascript" src="js/application.js"></script>
-<script type="application/javascript">
-	let books = [
-		new Book({
-			id: 1,
-			title: 'Based Design Mobile Learning Course on Android',
-			author: new Author({name: 'Liranti Rahmelina'}),
-			isbn: "1978-0524-2528-6374"
-		}),
-		new Book({
-			id: 2,
-			title: 'Development of Sales Application Using QR Code',
-			author: new Author({name: 'Ricky Akbar, Husnil Kamil'}),
-			isbn: "1978-0524-2528-6374"
-		}),
-		new Book({
-			id: 3,
-			title: 'Perancangan dan Implementasi Web Service pada Aplikasi Permainan ',
-			author: new Author({name: 'Gilang Arsya Priyatna Zaman'}),
-			isbn: "1978-0524-2528-6374"
-		}),
-		new Book({
-			id: 4,
-			title: 'Perancangan Augmented Reality Media Markerless PoI',
-			author: new Author({name: 'Abraham Christover Manuputty'}),
-			isbn: "1978-0524-2528-6374"
-		}),
-		new Book({
-			id: 5,
-			title: 'Pengembangan SIG Berbasis Node.JS untuk Pemetaan Mesin dan Tracking',
-			author: new Author({name: 'Rachmat Fajrin'}),
-			isbn: "1978-0524-2528-6374"
-		})
-	];
-
-	const bookTables =
-		document.querySelectorAll('[data-container="books-table"]');
-	for(let i = 0; i < bookTables.length; i++){
-		new BooksTable({
-			books: books,
-			containerElement: bookTables[i]
-		});
-	}
-</script>
+	<template v-if="isUpdate">
+		<div id="grey-modal-background" @keyup.enter="upJurnal()">
+			<div class="modal" @keyup.enter="upJurnal()">
+			<label for="title">Title</label>
+			<input type="text" id="title" v-model="title" :class="[inputErr[0] ? 'error' : '']" @keyup.enter="upJurnal(curId)">
+			<label for="isbn">ISBN</label>
+			<input type="text" id="isbn" v-model="isbn" :class="[inputErr[1] ? 'error' : '']" @keyup.enter="upJurnal(curId)">
+			<label for="auth">Author</label>
+			<input type="text" id="auth" v-model="author" :class="[inputErr[2] ? 'error' : '']" @keyup.enter="upJurnal(curId)">
+			<button class="green" @click="upJurnal(curId)">Update Jurnal</button>
+			<button @click="cancelUpdate">Batal</button>
+			</div>
+		</div>
+	</template>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="js/application.js"></script>
 </body>
 </html>
