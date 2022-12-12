@@ -60,36 +60,36 @@ div#grey-modal-background{
 div#grey-modal-background.hidden{
 	display: none;
 }
-form.modal{
+.modal{
 	background: #fff;
 	width: 400px;
 	padding: 1em;
 	border-radius: 5px;
 	box-shadow: 0 5px 5px 2px #555;
 }
-form.modal label{
+.modal label{
 	display: block;
 }
-form.modal input{
+.modal input{
 	width: 100%;
 	box-sizing: border-box;
 }
-form button{
+.modal button{
 	float: right;
 	margin-left: 1em;
 }
-form button.green{
+button.green{
 	background: #528051;
 	color: #fff;
 }
-form button.green:hover{
+button.green:hover{
 	background: #487047;
 }
-form input{
+input{
 	border: 1px solid #ddd;
 	border-radius: 3px;
 	padding: 3px 4px;
 }
-form input.error{
+input.error{
 	border: 1px solid #e5635f;
 }
