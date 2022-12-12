@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+	font-size: 16px;
+	color: #444;
+	font-family: Arial, serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Prompt-box {
+  position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(8, 8, 8, 0.62);
+	height: 100vh;
+	width: 100%;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box {
+  position: relative;
+  width: 50%;
+  min-height: 300px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  overflow: auto;
+}
