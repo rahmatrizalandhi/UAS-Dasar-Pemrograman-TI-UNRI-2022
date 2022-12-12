@@ -1,0 +1,21 @@
+<div style="">
+  <h1>
+    Database Jurnal
+  </h1>
+  <button ng-click="ButtonClick()">Buat Jurnal Baru</button>
+</div>
+
+<table>
+  <tr>
+    <th style="text-align: center; color: white;">ID</th>
+    <th style="text-align: center; color: white;">TITLE</th>
+    <th style="text-align: center; color: white;">ISBN</th>
+    <th style="text-align: center; color: white;">AUTHOR</th>
+  </tr>
+
+  <tr *ngFor = "let row of rows">
+    <td *ngFor = "let column of headers">
+
+    </td>
+  </tr>
+</table>
