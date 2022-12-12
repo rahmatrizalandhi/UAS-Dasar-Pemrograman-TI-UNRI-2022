@@ -1,0 +1,25 @@
+input{
+  display: flex;
+  position: relative;
+  width: 40%;
+  height: 20%;
+}
+#delet{
+  background-color: red;
+  position: flex;
+}
+#table{
+  background-color: greenyellow;
+  padding: 5px;
+}
+#aa{
+  display: flex;
+  position: relative;
+}
+.App {
+  text-align: center;
+}
+.input {
+  width: 100%;
+  padding: 10px;
+}
